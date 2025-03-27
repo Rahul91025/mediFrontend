@@ -11,6 +11,7 @@ import DoctorDashboard from "./pages/Doctor";
 import ContactPage from "./pages/Contact";
 import MonitoringPage from "./pages/Camera";
 import PatientDashboard from "./pages/Dashboard";
+import MedicineReminder from "./pages/remainder";
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
           <Route path="/get-started" element={<ContactPage />} />
           <Route path="/start" element={<MonitoringPage/>}/>
           <Route path="/dash" element={<PatientDashboard/>}/>
+          <Route path="/reminder"  element={<MedicineReminder/>} />
         </Routes>
       </Router>
     </>
