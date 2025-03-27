@@ -16,7 +16,7 @@ const Navbar = () => {
         <Link to="/patients" className="text-gray-300 hover:text-white text-lg font-medium">Patient</Link>
         <Link to="/services" className="text-gray-300 hover:text-white text-lg font-medium">Services</Link>
         <Link to="/doctor" className="text-gray-300 hover:text-white text-lg font-medium">Doctor</Link>
-        <Link to="/get-started" className="text-gray-300 hover:text-white text-lg font-medium">Get Started</Link>
+        <Link to="/get-started" className="text-gray-300 hover:text-white text-lg font-medium">Contact</Link>
       </div>
 
       {/* CTA Button */}
