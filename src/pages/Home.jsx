@@ -1,7 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const HomePage = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="relative bg-[#0a0f1c] bg-[url('/grid-pattern.svg')] min-h-screen flex flex-col items-center justify-center text-white px-6 overflow-hidden">
       
@@ -29,6 +32,7 @@ const HomePage = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-6 py-3 rounded-full text-lg font-semibold shadow-lg transition-all duration-300"
+            onClick={() => navigate("/patients")}
           >
             Find a Doctor <span className="ml-2">➡️</span>
           </motion.button>
@@ -37,6 +41,7 @@ const HomePage = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="bg-gray-800 hover:bg-gray-700 text-white px-6 py-3 rounded-full text-lg font-semibold shadow-lg transition-all duration-300"
+            onClick={() => navigate("/dash")}
           >
             Patient Portal <span className="ml-2">👤</span>
           </motion.button>

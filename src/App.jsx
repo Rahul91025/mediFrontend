@@ -9,6 +9,8 @@ import FindDoctor from "./pages/patient";
 import Main from "./pages/Main";
 import DoctorDashboard from "./pages/Doctor";
 import ContactPage from "./pages/Contact";
+import MonitoringPage from "./pages/Camera";
+import PatientDashboard from "./pages/Dashboard";
 
 const App = () => {
   return (
@@ -24,6 +26,8 @@ const App = () => {
           <Route path="/patients" element={<FindDoctor />} />
           <Route path="/doctor" element={<DoctorDashboard />} />
           <Route path="/get-started" element={<ContactPage />} />
+          <Route path="/start" element={<MonitoringPage/>}/>
+          <Route path="/dash" element={<PatientDashboard/>}/>
         </Routes>
       </Router>
     </>
