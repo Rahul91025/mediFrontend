@@ -31,7 +31,7 @@ export default function FindDoctor() {
   const [selectedCategory, setSelectedCategory] = useState("All Specialties");
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/doctors")
+    fetch("https://backend1-47z6.onrender.com/api/doctors")
       .then(response => response.json())
       .then(data => {
         const enrichedData = data.map((doctor, index) => ({
@@ -54,7 +54,7 @@ export default function FindDoctor() {
     try {
       const appointmentDate = new Date().toISOString();
 
-      const response = await fetch(`http://localhost:5000/api/doctors/${doctorId}/appointments`, {
+      const response = await fetch(`https://backend1-47z6.onrender.com/api/doctors/${doctorId}/appointments`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
