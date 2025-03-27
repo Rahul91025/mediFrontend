@@ -20,7 +20,7 @@ const Navbar = () => {
         <Link to="/dash" className="text-gray-300 hover:text-white text-lg font-medium" onClick={() => setIsOpen(false)}>Dashboard</Link>
         <Link to="/services" className="text-gray-300 hover:text-white text-lg font-medium">Services</Link>
         <Link to="/doctor" className="text-gray-300 hover:text-white text-lg font-medium">Doctor</Link>
-        <Link to="/reminder" className="text-gray-300 hover:text-white text-lg font-medium" onClick={() => setIsOpen(false)}>reminder</Link>
+        <Link to="/reminder" className="text-gray-300 hover:text-white text-lg font-medium" onClick={() => setIsOpen(false)}>Reminder</Link>
         <Link to="/get-started" className="text-gray-300 hover:text-white text-lg font-medium">Contact</Link>
       </div>
 
@@ -46,7 +46,7 @@ const Navbar = () => {
           <Link to="/dash" className="text-gray-300 hover:text-white text-lg font-medium" onClick={() => setIsOpen(false)}>Dashboard</Link>
           <Link to="/services" className="text-gray-300 hover:text-white text-lg font-medium" onClick={() => setIsOpen(false)}>Services</Link>
           <Link to="/doctor" className="text-gray-300 hover:text-white text-lg font-medium" onClick={() => setIsOpen(false)}>Doctor</Link>
-          <Link to="/reminder" className="text-gray-300 hover:text-white text-lg font-medium" onClick={() => setIsOpen(false)}>reminder</Link>
+          <Link to="/reminder" className="text-gray-300 hover:text-white text-lg font-medium" onClick={() => setIsOpen(false)}>Reminder</Link>
           <Link to="/get-started" className="text-gray-300 hover:text-white text-lg font-medium" onClick={() => setIsOpen(false)}>Contact</Link>
           
           {/* CTA Button for Mobile */}
