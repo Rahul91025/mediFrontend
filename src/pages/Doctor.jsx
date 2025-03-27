@@ -23,7 +23,7 @@ const DoctorDashboard = () => {
 
     try {
       setLoading(true);
-      const response = await axios.post("http://localhost:5000/api/doctors", newDoctor);
+      const response = await axios.post("https://backend1-47z6.onrender.com/api/doctors", newDoctor);
 
       if (response.status === 201) {
         setDoctors([...doctors, { id: doctors.length + 1, ...newDoctor }]);
